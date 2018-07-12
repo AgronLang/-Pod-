@@ -6,17 +6,7 @@
 2.创建远端项目仓库，将本地仓库与远端仓库进行关联 git命令：git push -u origin master
   创建podspec仓库，此仓库只用于存放.podspec，跟项目仓库彼此独立；
   多个项目可以公用一个podspec仓库，多项目目录结构：
-├── spec根目录
-    └── [项目1]
-        └── [1.0.0]
-            └── [SPEC_NAME].podspec
-        └── [2.0.0]
-            └── [SPEC_NAME].podspec
-    └── [项目2]
-        └── [1.0.0]
-            └── [SPEC_NAME].podspec
-        └── [2.0.0]
-            └── [SPEC_NAME].podspec
+
 
 3. 编辑.podspec文件，常用属性解释
 .name：名称，pod search 搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
@@ -41,4 +31,3 @@ pod lib lint SPEC_NAME.podspec --allow-warnings 可以忽略警告
 
 7.发布
 pod repo push REPO_NAME SPEC_NAME.podspec
-
