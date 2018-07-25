@@ -16,7 +16,7 @@
 3.创建远端版本库，只用于存放.podspec文件，和代码库互相独立；
 &nbsp;&nbsp;&nbsp;注意：多个项目可以共用一个版本库 附图
 
-![图片描述](/tfl/pictures/201807/tapd_20072991_1531447691_49.png)
+![图片描述](/pic1.png)
 
 
 ----------
@@ -54,7 +54,7 @@
  --sources='私有podspec库地址, https://github.com/CocoaPods/Specs.git'
 并在工程podfile中添加指定source，例如：
 
-![图片描述](/tfl/pictures/201807/tapd_20072991_1531452117_14.png)
+![图片描述](/pic2.png)
 
 如果报错 ··· error: include of non-modular header inside framework module ··· [-Werror,-Wnon-modular-include-in-framework-module]
 解决办法：在pod lib lint 或者 pod spec lint 以及 pod repo push ....时候加上   --use-libraries
