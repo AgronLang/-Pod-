@@ -70,8 +70,3 @@
 
 
 ----------
-
-
-8.发布
-
-- pod repo push REPO_NAME SPEC_NAME.podspec
